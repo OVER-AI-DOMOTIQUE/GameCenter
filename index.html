@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GameCenter</title>
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'; img-src 'self' data: file:;">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- 🌌 Barre de titre personnalisée -->
+  <div class="custom-title-bar">
+    <div class="window-controls">
+      <button class="minimize" id="minimize">—</button>
+      <button class="maximize" id="maximize">□</button>
+      <button class="close" id="close">✕</button>
+    </div>
+  </div>
+  <!-- 🔧 Bouton Accessoire -->
+  <button class="accessory-btn" id="accessory">Accessoire</button>
+
+  <!-- 📚 Menu et recherche -->
+  <header class="main-header">
+    <div class="menu-category">
+      <label for="category">Catégorie :</label>
+      <select id="category">
+        <option value="tous">Tous</option>
+      </select>
+    </div>
+
+    <div class="search-bar">
+      <input type="text" id="search" placeholder="Rechercher un jeu...">
+    </div>
+  </header>
+
+  <!-- 🕹️ Grille des jeux -->
+  <div id="gameGrid" class="game-grid"></div>
+
+  <script src="renderer.js"></script>
+</body>
+</html>

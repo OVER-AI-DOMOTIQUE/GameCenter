@@ -1,0 +1,47 @@
+{
+    "name": "game-center",
+    "version": "1.0.0",
+    "description": "Un launcher qui regroupe tout nos jeux en une seul app",
+    "author": "iaover.fr",
+    "main": "main.js",
+    "devDependencies": {
+      "electron": "^34.2.0",
+      "electron-builder": "^25.1.8"
+    },
+    "scripts": {
+      "start": "electron .",
+      "pack": "electron-builder --dir",
+      "dist": "electron-builder"
+    },
+    "dependencies": {
+      "extract-file-icon": "^0.3.2",
+      "fs": "^0.0.1-security",
+      "path": "^0.12.7",
+      "sharp": "^0.33.5"
+    },
+    "build": {
+      "appId": "com.gamecenter.app",
+      "productName": "Game Center",
+      "directories": {
+        "output": "dist"
+      },
+      "files": [
+        "**/*"
+      ],
+      "win": {
+        "icon": "icons/app_icon.png",
+        "target": "nsis"
+      },
+      "mac": {
+        "icon": "icons/app_icon.icns"
+      },
+      "linux": {
+        "icon": "icons/app_icon.png",
+        "target": [
+          "AppImage",
+          "deb"
+        ]
+      }
+    }
+  }
+  
