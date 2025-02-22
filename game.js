@@ -98,7 +98,7 @@ const games = [
   {
     name: "Lockdown Protocol",
     path: "D:\\Games\\LockdownProtocol\\LockdownProtocol.exe",
-    iconPath: "./icons/LockdownProtocol.png",
+    iconPath: "./icons/LockDownProtocol.png",
     categories: ["Action", "Survival"]
   },
   {
