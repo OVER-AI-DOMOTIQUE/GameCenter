@@ -50,7 +50,7 @@ cd game-center
 npm install
 ```
 
-###3. **Lancer l'application**
+### 3. **Lancer l'application**
 ```bash
 npm start
 ```
