@@ -1,3 +1,3 @@
 !macro customInit
-    StrCpy $INSTDIR "C:\Program Files\Game Center"
+    StrCpy $INSTDIR "C:\Game Center"
 !macroend
