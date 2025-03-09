@@ -1,7 +1,13 @@
 const games = [
   {
+    name: "Ready Or Not",
+    path: "D:\\Games\\ReadyOrNot\\.exe",
+    iconPath: "./icons/ReadyOrNot.png",
+    categories: ["FPS", "Simulation"]
+  },
+  {
     name: "Scrap Mechanic",
-    path: "D:\\Games\\ScrapMechanic\\Release\\ScrapMechanicc.exe",
+    path: "D:\\Games\\ScrapMechanic\\Release\\ScrapMechanic.exe",
     iconPath: "./icons/ScrapMechanic.png",
     categories: ["Sandbox", "Construction"]
   },
