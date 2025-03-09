@@ -129,3 +129,11 @@ document.getElementById('search').addEventListener('input', (event) => {
 document.getElementById('accessory').addEventListener('click', () => {
   window.location.href = 'accessoire.html'; // Redirection
 });
+
+document.getElementById('download-button').addEventListener('click', () => {
+  ipcRenderer.send('download-games');
+})
+
+document.getElementById('download-button').addEventListener('click', () => {
+  ipcRenderer.send('download-games');
+});

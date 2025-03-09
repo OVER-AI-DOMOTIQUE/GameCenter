@@ -14,6 +14,8 @@
         "dist": "electron-builder"
     },
     "dependencies": {
+        "adm-zip": "^0.5.16",
+        "axios": "^1.8.2",
         "electron-updater": "^6.3.9",
         "extract-file-icon": "^0.3.2",
         "fs": "^0.0.1-security",
@@ -36,13 +38,12 @@
             "target": "nsis"
         },
         "nsis": {
-    "oneClick": false,
-    "perMachine": true,
-    "createDesktopShortcut": "always",
-    "createStartMenuShortcut": true,
-    "shortcutName": "Game Center",
-    "include": "build/installer.nsh"
-}
-
+            "oneClick": false,
+            "perMachine": true,
+            "createDesktopShortcut": "always",
+            "createStartMenuShortcut": true,
+            "shortcutName": "Game Center",
+            "include": "build/installer.nsh"
+        }
     }
 }
